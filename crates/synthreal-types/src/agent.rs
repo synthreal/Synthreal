@@ -57,9 +57,9 @@ pub struct ModelRoutingConfig {
 impl Default for ModelRoutingConfig {
     fn default() -> Self {
         Self {
-            simple_model: "claude-haiku-4-5-20251001".to_string(),
-            medium_model: "claude-sonnet-4-20250514".to_string(),
-            complex_model: "claude-sonnet-4-20250514".to_string(),
+            simple_model: "openrouter/meta-llama/llama-3.3-70b-instruct:free".to_string(),
+            medium_model: "openrouter/openai/gpt-oss-120b:free".to_string(),
+            complex_model: "openrouter/deepseek/deepseek-r1:free".to_string(),
             simple_threshold: 100,
             complex_threshold: 500,
         }

@@ -29,6 +29,14 @@ struct ProviderInfo {
 
 const PROVIDERS: &[ProviderInfo] = &[
     ProviderInfo {
+        name: "openrouter",
+        display: "OpenRouter",
+        env_var: "OPENROUTER_API_KEY",
+        default_model: "openrouter/openai/gpt-oss-120b:free",
+        needs_key: true,
+        hint: "free models",
+    },
+    ProviderInfo {
         name: "groq",
         display: "Groq",
         env_var: "GROQ_API_KEY",
@@ -65,14 +73,6 @@ const PROVIDERS: &[ProviderInfo] = &[
         display: "OpenAI",
         env_var: "OPENAI_API_KEY",
         default_model: "gpt-4o",
-        needs_key: true,
-        hint: "",
-    },
-    ProviderInfo {
-        name: "openrouter",
-        display: "OpenRouter",
-        env_var: "OPENROUTER_API_KEY",
-        default_model: "openrouter/google/gemini-2.5-flash",
         needs_key: true,
         hint: "",
     },

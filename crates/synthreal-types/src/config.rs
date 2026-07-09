@@ -1701,9 +1701,9 @@ pub struct DefaultModelConfig {
 impl Default for DefaultModelConfig {
     fn default() -> Self {
         Self {
-            provider: "anthropic".to_string(),
-            model: "claude-sonnet-4-20250514".to_string(),
-            api_key_env: "ANTHROPIC_API_KEY".to_string(),
+            provider: "openrouter".to_string(),
+            model: "openrouter/openai/gpt-oss-120b:free".to_string(),
+            api_key_env: "OPENROUTER_API_KEY".to_string(),
             base_url: None,
             subprocess_timeout_secs: None,
         }

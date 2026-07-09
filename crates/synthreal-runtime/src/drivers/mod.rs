@@ -603,16 +603,16 @@ pub fn create_driver(config: &DriverConfig) -> Result<Arc<dyn LlmDriver>, LlmErr
 pub fn detect_available_provider() -> Option<(&'static str, &'static str, &'static str)> {
     // Priority: popular cloud providers first, then niche, then local
     const PROBE_ORDER: &[(&str, &str, &str)] = &[
+        (
+            "openrouter",
+            "openrouter/openai/gpt-oss-120b:free",
+            "OPENROUTER_API_KEY",
+        ),
         ("openai", "gpt-4o", "OPENAI_API_KEY"),
         ("anthropic", "claude-sonnet-4-20250514", "ANTHROPIC_API_KEY"),
         ("gemini", "gemini-2.5-flash", "GEMINI_API_KEY"),
         ("groq", "llama-3.3-70b-versatile", "GROQ_API_KEY"),
         ("deepseek", "deepseek-chat", "DEEPSEEK_API_KEY"),
-        (
-            "openrouter",
-            "openrouter/google/gemini-2.5-flash",
-            "OPENROUTER_API_KEY",
-        ),
         ("mistral", "mistral-large-latest", "MISTRAL_API_KEY"),
         (
             "together",

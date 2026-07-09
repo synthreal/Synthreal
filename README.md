@@ -407,22 +407,26 @@ curl -X POST localhost:4200/v1/chat/completions \
 git clone https://github.com/synthreal/Synthreal.git && cd Synthreal
 cargo install --path crates/synthreal-cli
 
-# 2. Initialize. Walks you through provider setup.
+# 2. Free-tier by default: Synthreal runs on the most powerful free
+#    open-source models via OpenRouter (get a key at openrouter.ai/keys)
+export OPENROUTER_API_KEY="sk-or-..."
+
+# 3. Initialize. Walks you through provider setup.
 synthreal init
 
-# 3. Start the daemon
+# 4. Start the daemon
 synthreal start
 
-# 4. Dashboard is live at http://localhost:4200
+# 5. Dashboard is live at http://localhost:4200
 
-# 5. Activate a Hand. It starts working for you.
+# 6. Activate a Hand. It starts working for you.
 synthreal hand activate researcher
 
-# 6. Chat with an agent
+# 7. Chat with an agent
 synthreal chat researcher
 > "What are the emerging trends in AI agent frameworks?"
 
-# 7. Spawn a pre-built agent
+# 8. Spawn a pre-built agent
 synthreal agent spawn coder
 ```
 

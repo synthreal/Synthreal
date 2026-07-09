@@ -4157,7 +4157,7 @@ mod tests {
     fn test_find_model_by_alias() {
         let catalog = ModelCatalog::new();
         let entry = catalog.find_model("sonnet").unwrap();
-        assert_eq!(entry.id, "claude-sonnet-4-6");
+        assert_eq!(entry.id, "claude-sonnet-5");
     }
 
     #[test]
@@ -4176,7 +4176,7 @@ mod tests {
     #[test]
     fn test_resolve_alias() {
         let catalog = ModelCatalog::new();
-        assert_eq!(catalog.resolve_alias("sonnet"), Some("claude-sonnet-4-6"));
+        assert_eq!(catalog.resolve_alias("sonnet"), Some("claude-sonnet-5"));
         assert_eq!(
             catalog.resolve_alias("haiku"),
             Some("claude-haiku-4-5-20251001")
@@ -4188,7 +4188,7 @@ mod tests {
     fn test_models_by_provider() {
         let catalog = ModelCatalog::new();
         let anthropic = catalog.models_by_provider("anthropic");
-        assert_eq!(anthropic.len(), 7);
+        assert_eq!(anthropic.len(), 11);
         assert!(anthropic.iter().all(|m| m.provider == "anthropic"));
     }
 
