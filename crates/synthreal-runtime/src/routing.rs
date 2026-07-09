@@ -278,11 +278,11 @@ mod tests {
         );
         assert_eq!(
             router.model_for_complexity(TaskComplexity::Medium),
-            "claude-sonnet-4-6"
+            "claude-sonnet-5"
         );
         assert_eq!(
             router.model_for_complexity(TaskComplexity::Complex),
-            "claude-opus-4-6"
+            "claude-opus-4-8"
         );
     }
 
@@ -342,11 +342,11 @@ mod tests {
         );
         assert_eq!(
             router.model_for_complexity(TaskComplexity::Medium),
-            "claude-sonnet-4-6"
+            "claude-sonnet-5"
         );
         assert_eq!(
             router.model_for_complexity(TaskComplexity::Complex),
-            "claude-opus-4-6"
+            "claude-opus-4-8"
         );
     }
 

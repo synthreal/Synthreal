@@ -660,7 +660,7 @@ mod tests {
     fn test_decode_wecom_payload() {
         let plain = decode_wecom_payload(
             "ShlNaJ0PrdXQAuCDVqMki7c2JLNnY6mebvQodTv9qoV",
-            "/gKbXNFpvlyYNTCneTag1rGm1P4Q5fExE3OPzdYlEyUVDgi55PHVIbo+mHMXWatdW8H8RTQJCly0HBNrWry2Uw==",
+            "+uqEt1WlooNG5ZM0xqzSoAZ71vfEEw4aKLm9iFRCQGrrQBnkRjardNCBFB15OoetJjeRT1I9NfF98aIJA01MQg==",
         )
         .expect("echostr should decrypt");
 

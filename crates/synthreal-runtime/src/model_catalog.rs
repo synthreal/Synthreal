@@ -4246,7 +4246,7 @@ mod tests {
     fn test_provider_model_counts() {
         let catalog = ModelCatalog::new();
         let anthropic = catalog.get_provider("anthropic").unwrap();
-        assert_eq!(anthropic.model_count, 7);
+        assert_eq!(anthropic.model_count, 11);
         let groq = catalog.get_provider("groq").unwrap();
         assert_eq!(groq.model_count, 7);
     }
@@ -4256,7 +4256,7 @@ mod tests {
         let catalog = ModelCatalog::new();
         let aliases = catalog.list_aliases();
         assert!(aliases.len() >= 20);
-        assert_eq!(aliases.get("sonnet").unwrap(), "claude-sonnet-4-6");
+        assert_eq!(aliases.get("sonnet").unwrap(), "claude-sonnet-5");
         // New aliases
         assert_eq!(aliases.get("grok").unwrap(), "grok-4-0709");
         assert_eq!(aliases.get("jamba").unwrap(), "jamba-1.5-large");
