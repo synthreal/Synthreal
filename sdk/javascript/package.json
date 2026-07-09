@@ -1,0 +1,17 @@
+{
+  "name": "@synthreal/sdk",
+  "version": "0.1.0",
+  "description": "Official JavaScript/TypeScript client for the Synthreal Agent OS REST API",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "keywords": ["synthreal", "agent", "ai", "llm", "sdk"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/synthreal/synthreal"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": ["index.js", "index.d.ts"]
+}

@@ -1,0 +1,46 @@
+[package]
+name = "synthreal-kernel"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Core kernel for the Synthreal Agent OS"
+
+[dependencies]
+synthreal-types = { path = "../synthreal-types" }
+synthreal-memory = { path = "../synthreal-memory" }
+synthreal-runtime = { path = "../synthreal-runtime" }
+synthreal-skills = { path = "../synthreal-skills" }
+synthreal-hands = { path = "../synthreal-hands" }
+synthreal-extensions = { path = "../synthreal-extensions" }
+synthreal-wire = { path = "../synthreal-wire" }
+synthreal-channels = { path = "../synthreal-channels" }
+tokio = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+toml = { workspace = true }
+dashmap = { workspace = true }
+crossbeam = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+chrono = { workspace = true }
+chrono-tz = { workspace = true }
+uuid = { workspace = true }
+thiserror = { workspace = true }
+async-trait = { workspace = true }
+dirs = { workspace = true }
+futures = { workspace = true }
+subtle = { workspace = true }
+rand = { workspace = true }
+hex = { workspace = true }
+sha2 = { workspace = true }
+reqwest = { workspace = true }
+rustls = { workspace = true }
+cron = "0.16"
+zeroize = { workspace = true }
+
+[target.'cfg(unix)'.dependencies]
+libc = "0.2"
+
+[dev-dependencies]
+tokio-test = { workspace = true }
+tempfile = { workspace = true }
