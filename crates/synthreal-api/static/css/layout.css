@@ -161,7 +161,7 @@
   background: var(--accent);
   color: var(--text-on-accent);
   font-weight: 600;
-  box-shadow: var(--shadow-sm), 0 2px 8px rgba(255, 92, 0, 0.2);
+  box-shadow: var(--shadow-sm), 0 2px 8px rgba(124, 58, 237, 0.2);
 }
 
 .nav-icon {

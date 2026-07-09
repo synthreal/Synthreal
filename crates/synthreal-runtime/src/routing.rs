@@ -172,8 +172,8 @@ mod tests {
     fn default_config() -> ModelRoutingConfig {
         ModelRoutingConfig {
             simple_model: "llama-3.3-70b-versatile".to_string(),
-            medium_model: "claude-sonnet-4-6".to_string(),
-            complex_model: "claude-opus-4-6".to_string(),
+            medium_model: "claude-sonnet-5".to_string(),
+            complex_model: "claude-opus-4-8".to_string(),
             simple_threshold: 200,
             complex_threshold: 800,
         }
