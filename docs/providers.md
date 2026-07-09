@@ -24,7 +24,11 @@ Synthreal ships with a comprehensive model catalog covering **3 native LLM drive
 The fastest path from zero to running:
 
 ```bash
-# Pick ONE provider — set its env var — done.
+# Recommended default: OpenRouter — one key, 400+ models, strong free tier.
+# Synthreal defaults to the most powerful free open-source models
+# (GPT-OSS-120B / Llama 3.3 70B / DeepSeek R1) routed by task complexity.
+export OPENROUTER_API_KEY="sk-or-..."   # https://openrouter.ai/keys
+# OR pick another provider — set its env var — done.
 export GEMINI_API_KEY="your-key"        # Free tier available
 # OR
 export GROQ_API_KEY="your-key"          # Free tier available
